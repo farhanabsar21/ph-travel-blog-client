@@ -1,0 +1,299 @@
+body{
+    overflow-x: hidden;
+}
+
+/* thumbnail */
+
+.post-thumbnail img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.post-thumbnail img:hover{
+    opacity: 0.8;
+}
+.post-thumbnail h4{
+    color: #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.post-thumbnail h4:hover{
+    color: #555;
+}
+.post-thumbnail p{
+    color: #333;
+}
+.post-thumbnail a{
+    text-decoration: none;
+}
+.menu-container{
+    background-image: url("./assets/forest-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    border-bottom-right-radius: 40px;
+    position: fixed;
+}
+
+.post-container{
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* banner container */
+.banner-container{
+    height: 100%;
+}
+.banner-container img{
+    height: 250px;
+}
+
+/* header container */
+
+.header-container{
+    height: 400px;
+    position: relative;
+}
+.navigation{
+    position: absolute;
+    top: 25px;
+}
+.navigation ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.navigation ul li {
+    float: left;
+}
+
+.navigation ul li:last-child {
+    margin-left: 20px;
+}
+.welcome-green{
+    color: #006666;
+}
+.navigation a{
+    color: #000;
+    text-decoration: none;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffcc99;
+    transition: 0.3s;
+}
+.navigation a:hover{
+    color: #006666;
+    border-bottom: 1px solid #fff;
+}
+
+.header-nav button{
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 40px;
+    background: #000;
+    position: absolute;
+    right: 5px;
+}
+
+/* search container */
+.search-container{
+    height: 100%;
+}
+.search-container-center{
+    width: 80%;
+}
+.search-container input{
+    padding: 10px 26px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    width: 350px;
+    color: #222;
+    border-radius: 40px;
+}
+.search-container h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.search-container p{
+    color: #555;
+}
+.search-container button{
+    outline: none;
+    border: 2px solid #000;
+    padding: 9px 13.5px;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    margin-left: -50px;
+    transition: 0.3s;
+}
+.search-container button:hover{
+    color: #000;
+    background: #fff;
+}
+
+.travel{
+    font-weight: bold;
+    color: #ffcc99;
+}
+
+/* post input container */
+.add-post{
+    height: 100vh;
+}
+.post-input-container{
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+}
+.post-input-container h2{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.post-input-container textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    height: 300px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.title-input{
+    margin-top: 10px;
+}
+.title-input input{
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+.post-input-container button{
+    outline: none;
+    border: none;
+    padding: 8px 40px;
+    border-radius: 40px;
+    background: #006666;
+    color: #fff;
+    margin-top: 10px;
+
+}
+
+.file-input input{
+    outline: none;
+    border: none;
+}
+
+.file-input{
+    display: block;
+}
+
+/* single blog content */
+
+.single-blog-content img{
+    width: 100%;
+}
+
+.single-blog-content p{
+    color: #555;
+}
+
+.single-blog-content a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.single-blog-content a:hover{
+    color: #006666;
+}
+
+.single-blog-content nav{
+    position: relative;
+}
+.single-blog-content nav button{
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 40px;
+    background: #000;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+/* delete post*/
+
+.delete-post button{
+    outline: none;
+    border: none;
+    color: #b30000;
+    background: none;
+}
+
+.fa-trash{
+    font-size: 14px;
+}
+
+/* login container */
+.Login, .Register {
+    height: 100vh;
+    width: 100%;
+}
+
+.login-container{
+    width: 800px;
+    height: 500px;
+    background: rgba(255, 204, 153, 0.2);
+}
+
+.login-img-container{
+    background-image: url("./assets/retro-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-input-container{
+    padding: 10px;
+}
+
+.login-input-container input{
+    padding: 10px 20px;
+    color: #222;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+}
+
+.login-input-container button{
+    outline: none;
+    border: none;
+    background: #000;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.login-input-container a{
+    color: #006666;
+    text-decoration: none;
+}
+
+.success{
+    color: #006666;
+}
+
+.error{
+    color: #b30000;
+}

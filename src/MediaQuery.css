@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px){
+    .menu-container{
+        height: 300px;
+        position: static;
+        border-bottom-right-radius: 0px;
+    }
+    .banner-container img{
+        height: 200px;
+    }
+    .header-container{
+        padding: 20px 10px;
+        height: auto;
+    }
+    .header-nav button{
+        right: 15px;
+        padding: 6px 30px;
+        font-size: 12px;
+    }
+    .search-container{
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .search-container button{
+        margin-top: 10px;
+        margin-left: 0;
+    } 
+    .navigation{
+        top: 0;
+    }
+    .search-container h1{
+        font-size: 50px
+    }
+    .post-container{
+        height: auto;
+        position: static;
+        margin-top: 2rem;
+    }
+    .post-thumbnail img{
+        height: 250px;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .post-thumbnail p, h4, .delete-post{
+        padding: 10px 20px;
+    }
+    .welcome-green{
+        font-size: 13px;
+    }
+}
