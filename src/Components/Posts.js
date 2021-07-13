@@ -10,6 +10,7 @@ import { userAuthData } from '../App';
 const Posts = () => {
     const [posts, setPosts] = useState([])
     const [userLog, setUserLog] = useContext(userAuthData);
+    const [inputText, setInputText] = useState("");
     useEffect(()=> {
         fetch("https://ph-travel-blog.herokuapp.com/posts")
             .then(res => res.json())
@@ -19,6 +20,7 @@ const Posts = () => {
     const handleLogout = () => {
         setUserLog({})
     }
+    
     return (
         <div className="row p-2">
             <div className="header-container py-3">
@@ -38,13 +40,13 @@ const Posts = () => {
                         <div><h1>Welcome To <span className="travel">TRAVEL</span></h1></div>
                         <p>Programming Hero Travel Blog where we represent stories of places. We write stories about people, culture, and life. People travel, but how many are keep it in heart?</p>
                         <div className="mt-4">
-                            <input type="text" placeholder="search your content.." />
+                            <input type="text" placeholder="search your content.." onChange={event => (setInputText(event.target.value))}/>
                             <button><FontAwesomeIcon icon={faSearch} /></button>
                         </div>
                     </div>
                 </div>
             </div>
-            {posts.map(singlePost => <SinglePost singlePost={singlePost} key={singlePost._id}/>)}
+            {posts.filter(allPost => allPost.title.toLowerCase().includes(inputText.toLowerCase())).map(singlePost => <SinglePost singlePost={singlePost} key={singlePost._id}/>)}
         </div>
     );
 };
